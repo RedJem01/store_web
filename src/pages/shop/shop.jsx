@@ -3,20 +3,26 @@ import products from "./products"
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
+import CardMedia from '@mui/material/CardMedia';
 import { Typography, Grid2, Button } from '@mui/material';
 
 export const Shop = () => {
   return (
     <div className='shop'>
-      <div className='shopTitle'>
-        <h1>Products</h1>
-      </div>
+      <Typography variant="h4" component="div" marginTop="20px">
+        Products
+      </Typography>
       <div className='products'>
-        <Grid2 container spacing={3} paddingLeft={10} paddingRight={10} paddingBottom={10}>
+        <Grid2 container spacing={3} paddingLeft={5} paddingRight={5} paddingBottom={10} marginTop="20px">
           {products.map(product => {
             return (
               <Grid2 item xs={4}>
-                <Card>
+                <Card sx={{ width: 270, height: 400}}>
+                <CardMedia
+                  sx={{ height: 250 }}
+                  image= {require ("./record.jpg")}
+                  title="record"
+                />
                   <CardContent>
                     <Typography>
                       {product.name}
