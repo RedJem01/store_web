@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Record 1",
+        "id": "1",
+        "description": "Record by artist",
+        "price": "10.00"
+    },
+    {
+        "name": "Record 2",
+        "id": "2",
+        "description": "Record by artist",
+        "price": "15.00"
+    }
+]
